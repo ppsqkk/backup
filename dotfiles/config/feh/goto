@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+(($# < 4)) && exit 1
+
+pos="$1"; shift
+lines="$1"; shift
+list="$1"; shift
+pid="$1"; shift
+
+regex='^[+-]?[0-9]+$'
+in="$(dmenu -p "goto ($regex)" -l 0)"
+to=
+
+[[ "$in" =~ $regex ]] || exit 1
+case ${in:0:1} in
++) to=$((pos + ${in:1})) ;;
+-) to=$((pos - ${in:1})) ;;
+*) to=$in ;;
+esac
+to=$((to < 1 ? 1 : to))
+to=$((to > lines ? lines : to))
+
+tmp="$(sed -n $((to))p "$list")"
+feh -f - -\| "$tmp" "$@" <"$list" &
+kill "$pid"

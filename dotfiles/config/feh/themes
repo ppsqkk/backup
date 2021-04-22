@@ -1,0 +1,4 @@
+manga --action ";~/.config/feh/goto %u %l %L %V -Tmanga; rm -f %L" \
+      --action1 ";~/.config/feh/paste prev %u %F %l %L -.; rm -f %L" \
+      --action2 ";~/.config/feh/paste next %u %F %l %L -.; rm -f %L" \
+      -.

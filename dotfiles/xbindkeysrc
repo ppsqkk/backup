@@ -1,0 +1,32 @@
+ "sh -c 'pactl set-sink-mute @DEFAULT_SINK@ false; pactl set-sink-volume @DEFAULT_SINK@ +5%'"
+   XF86AudioRaiseVolume
+
+ "sh -c 'pactl set-sink-mute @DEFAULT_SINK@ false; pactl set-sink-volume @DEFAULT_SINK@ -5%'"
+   XF86AudioLowerVolume
+
+ "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+   XF86AudioMute
+
+ "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+   XF86AudioMicMute
+
+"rofi -show combi"
+  Mod4 + o
+
+"xterm"
+  Mod4 + Return
+
+"lock"
+  Shift+Mod4 + l
+
+"dunstctl close-all"
+  Shift+Mod4 + c
+
+"dunstctl history-pop"
+  Shift+Mod4 + h
+
+"dunstctl set-paused toggle"
+  Shift+Mod4 + p
+
+"tbar"
+  Shift+Mod4 + t

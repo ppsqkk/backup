@@ -1,0 +1,25 @@
+#!/bin/bash
+# Symlink dotfiles
+
+set -e -o pipefail
+
+cd "${1:-dotfiles}" || exit 1
+
+symlink () {
+	if [[ -d "$1" ]]
+	then
+		mkdir -p "$HOME/.$1"
+		[[ -n "$(ls -A "$1")" ]] && for dotfile in "$1"/*
+		do
+			symlink "$dotfile"
+		done
+	else
+		# Irreplacably destroy preexisting dotfiles
+		ln -sf "$PWD/$1" "$HOME/.$1"
+	fi
+}
+
+for dotfile in *
+do
+	symlink "$dotfile"
+done

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+list=("$(xdg-user-dir DESKTOP)"/wallpaper.*)
+
+[[ -r "${list[0]}" ]] && feh --no-fehbg --bg-max "${list[0]}"

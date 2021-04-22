@@ -1,0 +1,22 @@
+set imap_user=kipling.i.liu@gmail.com
+set folder=imaps://imap.gmail.com/
+set spoolfile=+INBOX
+mailboxes +INBOX
+set sendmail="/usr/bin/msmtp"
+
+color hdrdefault blue white
+color quoted blue white
+color signature red white
+color attachment red white
+color prompt brightmagenta white
+color message brightred white
+color error brightred white
+color indicator brightyellow red
+color status brightgreen blue
+color tree black white
+color normal black white
+color markers red white
+color search white black
+color tilde brightmagenta white
+color index blue white ~F
+color index red white "~N|~O"

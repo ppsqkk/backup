@@ -1,0 +1,26 @@
+attach -c ~/proj
+neww
+splitw -h -d
+splitw -v -d -t2
+
+attach -c ~/proj/test
+neww
+splitw -h -d
+splitw -v -d -t2
+
+attach -c ~/proj
+neww
+splitw -h -d
+splitw -v -d -t2
+
+attach -c ~
+neww -n file
+send-keys ranger Enter
+
+neww -n irc
+send-keys weechat Enter
+
+neww
+splitw -h -d
+
+neww

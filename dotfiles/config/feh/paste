@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+(($# < 5)) && exit 1
+
+dir="$1"; shift
+pos="$1"; shift
+curr="$1"; shift
+lines="$1"; shift
+list="$1"; shift
+left=
+right=
+
+if [[ "$dir" = prev ]]
+then
+	((pos <= 1)) && exit 1
+	left="$curr"
+	right="$(sed -n $((pos - 1))p "$list")"
+else
+	((pos >= lines)) && exit 1
+	left="$(sed -n $((pos + 1))p "$list")"
+	right="$curr"
+fi
+
+magick "$left" "$right" +append - | feh "$@" - &

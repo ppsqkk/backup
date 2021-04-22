@@ -1,0 +1,14 @@
+set number
+set backspace=indent,eol,start
+set ruler
+set showcmd
+set incsearch
+set hlsearch
+set listchars=tab:>-,trail:-
+set autoindent
+set ignorecase
+set smartcase
+set foldmethod=indent
+set foldlevelstart=99
+
+command -nargs=1 T set et ts=<args> sw=<args>
