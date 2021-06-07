@@ -46,6 +46,8 @@ imagemagick
 intel-ucode
 jq
 keepassxc
+lib32-libpulse
+lib32-mesa
 libtool
 linux
 linux-firmware
@@ -121,6 +123,10 @@ vim
 vlc
 weechat
 which
+wine
+wine-gecko
+wine-mono
+winetricks
 xbindkeys
 xclip
 xdg-user-dirs

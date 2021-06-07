@@ -81,6 +81,7 @@ Connect to the internet with nmcli.
 	passwd ppsqkk
 	# Enter password
 
+	sed -i '/#\[multilib\]/,+1s/#//' /etc/pacman.conf
 	pacman -S sudo tlp clamav
 	EDITOR=vim visudo
 	# The sudoers file should contain the following:
