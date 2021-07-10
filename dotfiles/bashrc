@@ -1,12 +1,25 @@
 [[ $- != *i* ]] && return
 
+stty -ixon
+
 set -o noclobber
+shopt -s autocd
 shopt -s checkwinsize
 shopt -s extglob
 
+status=
 exitstatus () {
-	local last="$?"
-	[[ "$last" != 0 ]] && printf ' \1%s\2%s\1%s\2' "$(tput setaf 1)" "$last" "$(tput sgr0)"
+	[[ "$status" != 0 ]] && printf ' \1%s\2%s\1%s\2' "$(tput setaf 1)" "$status" "$(tput sgr0)"
+}
+
+preprompt () {
+	local msg
+	msg="$(perl -e 'print "-" x '"$COLUMNS"';')"
+	printf '\1%s\2%s\1%s\2' "$(tput setaf 4)" "$msg" "$(tput sgr0)"
+}
+
+wd () {
+	sup -n "${PROMPT_DIRTRIM:-1}" "$PWD"
 }
 
 alias cp='cp -i'
@@ -14,12 +27,17 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias su='su -l'
 alias sudo='sudo -v; sudo '
+alias ll='ls -ahltF --group-directories-first --color=auto'
+alias cdiff='diff --color=auto'
 
 HISTCONTROL=ignoreboth
-PS1="[\[$(tput setaf 4)\]\u@\h\[$(tput sgr0)\] \W]\$(__git_ps1 \" (%s)\")\$(exitstatus) \$ "
+PS1="\$(preprompt)\n[\[$(tput setaf 2)\]\u@\h\[$(tput sgr0)\] \$(wd)]\$(__git_ps1 \" (%s)\")\$(exitstatus) \$ "
+PROMPT_COMMAND='status="$?"'
+PROMPT_DIRTRIM=2
 
-[[ -r /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion
-[[ -r /usr/share/clang/bash-autocomplete.sh ]] && . /usr/share/clang/bash-autocomplete.sh
-[[ -r /usr/share/git/completion/git-prompt.sh ]] && . /usr/share/git/completion/git-prompt.sh
-[[ -r /usr/share/fzf/key-bindings.bash ]] && . /usr/share/fzf/key-bindings.bash
-[[ -r /usr/share/fzf/completion.bash ]] && . /usr/share/fzf/completion.bash
+. /usr/share/bash-completion/bash_completion
+. /usr/share/clang/bash-autocomplete.sh
+. /usr/share/git/completion/git-prompt.sh
+. /usr/share/fzf/key-bindings.bash
+. /usr/share/fzf/completion.bash
+. ~/.z.sh

@@ -1,8 +1,6 @@
 alsa-utils
 anki
 anthy
-aspell
-aspell-en
 autoconf
 automake
 base
@@ -25,6 +23,8 @@ doxygen
 dunst
 efibootmgr
 emacs
+entr
+exiv2
 fakeroot
 fd
 feh
@@ -38,7 +38,10 @@ gimp
 git
 gnupg
 grub
+gvim
 htop
+hunspell
+hunspell-en_us
 i3lock
 ibus
 ibus-anthy
@@ -46,6 +49,7 @@ imagemagick
 intel-ucode
 jq
 keepassxc
+kolourpaint
 lib32-libpulse
 lib32-mesa
 libtool
@@ -68,13 +72,20 @@ msmtp
 mupen64plus
 mutt
 networkmanager
+nodejs
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+npm
 obs-studio
+okular
 openbox
 openssh
-otf-ipafont
 p7zip
 pacman-contrib
+pandoc
 patch
+perl
 pkgconf
 pkgstats
 pulseaudio
@@ -91,7 +102,9 @@ rofi
 rsync
 sbcl
 shellcheck
+slop
 snes9x-gtk
+sshfs
 strace
 subversion
 sudo
@@ -119,8 +132,6 @@ udisks2
 unrar
 unzip
 valgrind
-vim
-vlc
 weechat
 which
 wine
@@ -183,8 +194,4 @@ xorg-xwininfo
 xorg-xwud
 xss-lock
 xterm
-zathura-cb
-zathura-djvu
-zathura-pdf-mupdf
-zathura-ps
 zip

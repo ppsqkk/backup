@@ -100,6 +100,7 @@ As Non-Privileged User
 	cd proj
 	git clone https://github.com/ppsqkk/bin.git
 	ln -s ~/proj/bin ~/bin
+	mkdir -p ~/.local/bin
 	git clone https://github.com/ppsqkk/backup.git
 	cd backup
 	sudo pacman -S - <pkglist.txt

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Symlink dotfiles
 
 set -e -o pipefail

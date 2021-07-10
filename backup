@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Backup files and directories specified in list to ~/backup
 
 set -e -o pipefail
