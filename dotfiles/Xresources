@@ -1,8 +1,0 @@
-XTerm.termName: xterm-256color
-XTerm.vt100.metaSendsEscape: true
-XTerm.vt100.backarrowKey: false
-XTerm.ttyModes: erase ^?
-
-XTerm.vt100.faceName: mono
-XTerm.vt100.faceSize: 10
-XTerm.vt100.renderFont: true

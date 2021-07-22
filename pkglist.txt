@@ -1,3 +1,4 @@
+alacritty
 alsa-utils
 anki
 anthy
@@ -193,5 +194,4 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xss-lock
-xterm
 zip

@@ -13,7 +13,7 @@
 "rofi -show combi"
   Mod4 + o
 
-"xterm"
+"alacritty"
   Mod4 + Return
 
 "lock"
