@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+useradd -m ppsqkk
+passwd ppsqkk
+
+sed -i '/#\[multilib\]/,+1s/#//' /etc/pacman.conf
+pacman -Sy sudo tlp clamav
+
+cat <<EOF >/etc/sudoers
+ppsqkk ALL=(ALL) ALL
+
+@includedir /etc/sudoers.d
+EOF
+
+systemctl enable tlp.service clamav-freshclam.service

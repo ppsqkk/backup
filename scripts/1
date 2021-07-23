@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+timedatectl set-ntp true
+
+parted -s /dev/sda \
+mklabel gpt \
+mkpart efi fat32 1MiB 261MiB \
+set 1 esp on \
+mkpart root ext4 261MiB 100%
+
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4 /dev/sda2
+
+mount /dev/sda2 /mnt
+mkdir /mnt/efi
+mount /dev/sda1 /mnt/efi
+
+pacstrap /mnt base linux linux-firmware \
+	 vim man-db man-pages texinfo
+
+genfstab -U /mnt >>/mnt/etc/fstab

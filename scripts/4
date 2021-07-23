@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+sudo pacman -S git
+
+mkdir proj
+cd proj
+
+git clone https://github.com/ppsqkk/bin.git
+ln -s ~/proj/bin ~/bin
+mkdir -p ~/.local/bin
+
+git clone https://github.com/ppsqkk/backup.git
+cd backup
+sudo pacman -S - <pkglist.txt
+./symdot
+rm -f ~/.bash_profile

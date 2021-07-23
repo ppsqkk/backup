@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+(cd ~/proj/backup && ./symdot)
+
+mkdir -p "$(xdg-user-dir DOWNLOAD)/vg"
+
+gpg --import "$(xdg-user-dir DESKTOP)/privkey.asc"
+# Enter email password
+gpg --encrypt --output ~/.msmtp-gmail.gpg --recipient kipling.i.liu@gmail.com -
+
+ln -s /usr/bin/rofi ~/.local/bin/dmenu
