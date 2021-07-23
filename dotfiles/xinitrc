@@ -18,6 +18,7 @@ xset -b
 xbindkeys
 redshift -P -O 4000
 ibus-daemon -drx
+copyq &
 dunst &
 xss-lock -- lock &
 exec openbox-session
