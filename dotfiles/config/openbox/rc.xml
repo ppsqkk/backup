@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_config xmlns="http://openbox.org/3.4/rc"
-		xmlns:xi="http://www.w3.org/2001/XInclude">
+                xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <resistance>
   <strength>25</strength>
@@ -103,104 +103,104 @@
   <chainQuitKey>W-q</chainQuitKey>
 
 
-  <keybind key="W-K">		<action name="DirectionalCycleWindows"><direction>north</direction></action>		</keybind>
-  <keybind key="W-J">		<action name="DirectionalCycleWindows"><direction>south</direction></action>		</keybind>
-  <keybind key="W-L">		<action name="DirectionalCycleWindows"><direction>east</direction></action>		</keybind>
-  <keybind key="W-H">		<action name="DirectionalCycleWindows"><direction>west</direction></action>		</keybind>
+  <keybind key="W-K">           <action name="DirectionalCycleWindows"><direction>north</direction></action>            </keybind>
+  <keybind key="W-J">           <action name="DirectionalCycleWindows"><direction>south</direction></action>            </keybind>
+  <keybind key="W-L">           <action name="DirectionalCycleWindows"><direction>east</direction></action>             </keybind>
+  <keybind key="W-H">           <action name="DirectionalCycleWindows"><direction>west</direction></action>             </keybind>
 
-  <keybind key="W-semicolon">	<action name="NextWindow"/>								</keybind>
-  <keybind key="W-S-semicolon">	<action name="PreviousWindow"/>								</keybind>
+  <keybind key="W-semicolon">   <action name="NextWindow"/>                                                             </keybind>
+  <keybind key="W-S-semicolon"> <action name="PreviousWindow"/>                                                         </keybind>
 
-  <keybind key="W-bracketleft">	<action name="Raise"/>									</keybind>
-  <keybind key="W-apostrophe">	<action name="Lower"/>									</keybind>
+  <keybind key="W-bracketleft"> <action name="Raise"/>                                                                  </keybind>
+  <keybind key="W-apostrophe">  <action name="Lower"/>                                                                  </keybind>
 
-  <keybind key="W-period">	<action name="GoToDesktop"><to>next</to></action>					</keybind>
-  <keybind key="W-comma">	<action name="GoToDesktop"><to>previous</to></action>					</keybind>
+  <keybind key="W-period">      <action name="GoToDesktop"><to>next</to></action>                                       </keybind>
+  <keybind key="W-comma">       <action name="GoToDesktop"><to>previous</to></action>                                   </keybind>
 
-  <keybind key="W-P">		<action name="ToggleOmnipresent"/>							</keybind>
-  <keybind key="W-slash">	<action name="ToggleDecorations"/>							</keybind>
-
-
-  <keybind key="W-C-K">			<action name="MoveToEdge"><direction>north</direction></action>			</keybind>
-  <keybind key="W-C-J">			<action name="MoveToEdge"><direction>south</direction></action>			</keybind>
-  <keybind key="W-C-L">			<action name="MoveToEdge"><direction>east</direction></action>			</keybind>
-  <keybind key="W-C-H">			<action name="MoveToEdge"><direction>west</direction></action>			</keybind>
-  <keybind key="W-C-semicolon">		<action name="MoveResizeTo"><x>center</x><y>center</y></action>			</keybind>
-
-  <keybind key="W-C-bracketleft">	<action name="MoveRelative"><y>-20</y></action>					</keybind>
-  <keybind key="W-C-apostrophe">	<action name="MoveRelative"><y>20</y></action>					</keybind>
-  <keybind key="W-C-P">			<action name="MoveRelative"><x>20</x></action>					</keybind>
-  <keybind key="W-C-O">			<action name="MoveRelative"><x>-20</x></action>					</keybind>
-
-  <keybind key="W-C-period">		<action name="SendToDesktop"><to>next</to></action>				</keybind>
-  <keybind key="W-C-comma">		<action name="SendToDesktop"><to>previous</to></action>				</keybind>
-
-  <keybind key="W-C-slash">		<action name="Iconify"/>							</keybind>
+  <keybind key="W-P">           <action name="ToggleOmnipresent"/>                                                      </keybind>
+  <keybind key="W-slash">       <action name="ToggleDecorations"/>                                                      </keybind>
 
 
-  <keybind key="W-A-K">			<action name="GrowToEdge"><direction>north</direction></action>			</keybind>
-  <keybind key="W-A-J">			<action name="GrowToEdge"><direction>south</direction></action>			</keybind>
-  <keybind key="W-A-L">			<action name="GrowToEdge"><direction>east</direction></action>			</keybind>
-  <keybind key="W-A-H">			<action name="GrowToEdge"><direction>west</direction></action>			</keybind>
+  <keybind key="W-C-K">                 <action name="MoveToEdge"><direction>north</direction></action>                 </keybind>
+  <keybind key="W-C-J">                 <action name="MoveToEdge"><direction>south</direction></action>                 </keybind>
+  <keybind key="W-C-L">                 <action name="MoveToEdge"><direction>east</direction></action>                  </keybind>
+  <keybind key="W-C-H">                 <action name="MoveToEdge"><direction>west</direction></action>                  </keybind>
+  <keybind key="W-C-semicolon">         <action name="MoveResizeTo"><x>center</x><y>center</y></action>                 </keybind>
 
-  <keybind key="W-A-bracketleft">	<action name="ResizeRelative"><bottom>-20</bottom></action>			</keybind>
-  <keybind key="W-A-apostrophe">	<action name="ResizeRelative"><bottom>20</bottom></action>			</keybind>
-  <keybind key="W-A-P">			<action name="ResizeRelative"><right>20</right></action>			</keybind>
-  <keybind key="W-A-O">			<action name="ResizeRelative"><right>-20</right></action>			</keybind>
+  <keybind key="W-C-bracketleft">       <action name="MoveRelative"><y>-20</y></action>                                 </keybind>
+  <keybind key="W-C-apostrophe">        <action name="MoveRelative"><y>20</y></action>                                  </keybind>
+  <keybind key="W-C-P">                 <action name="MoveRelative"><x>20</x></action>                                  </keybind>
+  <keybind key="W-C-O">                 <action name="MoveRelative"><x>-20</x></action>                                 </keybind>
 
-  <keybind key="W-A-slash">		<action name="ToggleMaximize"><direction>vertical</direction></action>		</keybind>
-  <keybind key="W-A-comma">		<action name="ToggleMaximize"><direction>horizontal</direction></action>	</keybind>
-  <keybind key="W-A-F">			<action name="ToggleMaximize"/>							</keybind>
+  <keybind key="W-C-period">            <action name="SendToDesktop"><to>next</to></action>                             </keybind>
+  <keybind key="W-C-comma">             <action name="SendToDesktop"><to>previous</to></action>                         </keybind>
 
-  <keybind key="W-A-semicolon">		<action name="Close"/>								</keybind>
-  <keybind key="W-A-period">		<action name="ToggleShade"/>							</keybind>
-
-
-  <keybind key="W-F1">		<action name="GoToDesktop"><to>1</to></action>				</keybind>
-  <keybind key="W-F2">		<action name="GoToDesktop"><to>2</to></action>				</keybind>
-  <keybind key="W-F3">		<action name="GoToDesktop"><to>3</to></action>				</keybind>
-  <keybind key="W-F4">		<action name="GoToDesktop"><to>4</to></action>				</keybind>
-  <keybind key="W-F5">		<action name="GoToDesktop"><to>5</to></action>				</keybind>
-  <keybind key="W-F6">		<action name="GoToDesktop"><to>6</to></action>				</keybind>
-  <keybind key="W-F7">		<action name="GoToDesktop"><to>7</to></action>				</keybind>
-  <keybind key="W-F8">		<action name="GoToDesktop"><to>8</to></action>				</keybind>
-  <keybind key="W-F9">		<action name="GoToDesktop"><to>9</to></action>				</keybind>
-  <keybind key="W-F10">		<action name="GoToDesktop"><to>10</to></action>				</keybind>
-  <keybind key="W-F11">		<action name="GoToDesktop"><to>11</to></action>				</keybind>
-  <keybind key="W-F12">		<action name="GoToDesktop"><to>12</to></action>				</keybind>
-
-  <keybind key="W-C-F1">	<action name="SendToDesktop"><to>1</to></action>			</keybind>
-  <keybind key="W-C-F2">	<action name="SendToDesktop"><to>2</to></action>			</keybind>
-  <keybind key="W-C-F3">	<action name="SendToDesktop"><to>3</to></action>			</keybind>
-  <keybind key="W-C-F4">	<action name="SendToDesktop"><to>4</to></action>			</keybind>
-  <keybind key="W-C-F5">	<action name="SendToDesktop"><to>5</to></action>			</keybind>
-  <keybind key="W-C-F6">	<action name="SendToDesktop"><to>6</to></action>			</keybind>
-  <keybind key="W-C-F7">	<action name="SendToDesktop"><to>7</to></action>			</keybind>
-  <keybind key="W-C-F8">	<action name="SendToDesktop"><to>8</to></action>			</keybind>
-  <keybind key="W-C-F9">	<action name="SendToDesktop"><to>9</to></action>			</keybind>
-  <keybind key="W-C-F10">	<action name="SendToDesktop"><to>10</to></action>			</keybind>
-  <keybind key="W-C-F11">	<action name="SendToDesktop"><to>11</to></action>			</keybind>
-  <keybind key="W-C-F12">	<action name="SendToDesktop"><to>12</to></action>			</keybind>
-
-  <keybind key="W-A-F1">	<action name="SendToDesktop"><to>1</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F2">	<action name="SendToDesktop"><to>2</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F3">	<action name="SendToDesktop"><to>3</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F4">	<action name="SendToDesktop"><to>4</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F5">	<action name="SendToDesktop"><to>5</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F6">	<action name="SendToDesktop"><to>6</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F7">	<action name="SendToDesktop"><to>7</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F8">	<action name="SendToDesktop"><to>8</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F9">	<action name="SendToDesktop"><to>9</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F10">	<action name="SendToDesktop"><to>10</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F11">	<action name="SendToDesktop"><to>11</to><follow>no</follow></action>	</keybind>
-  <keybind key="W-A-F12">	<action name="SendToDesktop"><to>12</to><follow>no</follow></action>	</keybind>
-
-  <keybind key="W-backslash">	<action name="ShowMenu"><menu>client-menu</menu></action>		</keybind>
-  <keybind key="W-S-backslash">	<action name="ShowMenu"><menu>client-list-menu</menu></action>		</keybind>
+  <keybind key="W-C-slash">             <action name="Iconify"/>                                                        </keybind>
 
 
-  <keybind key="W-S-E">	<action name="Exit"/>		</keybind>
-  <keybind key="W-S-R">	<action name="Reconfigure"/>	</keybind>
+  <keybind key="W-A-K">                 <action name="GrowToEdge"><direction>north</direction></action>                 </keybind>
+  <keybind key="W-A-J">                 <action name="GrowToEdge"><direction>south</direction></action>                 </keybind>
+  <keybind key="W-A-L">                 <action name="GrowToEdge"><direction>east</direction></action>                  </keybind>
+  <keybind key="W-A-H">                 <action name="GrowToEdge"><direction>west</direction></action>                  </keybind>
+
+  <keybind key="W-A-bracketleft">       <action name="ResizeRelative"><bottom>-20</bottom></action>                     </keybind>
+  <keybind key="W-A-apostrophe">        <action name="ResizeRelative"><bottom>20</bottom></action>                      </keybind>
+  <keybind key="W-A-P">                 <action name="ResizeRelative"><right>20</right></action>                        </keybind>
+  <keybind key="W-A-O">                 <action name="ResizeRelative"><right>-20</right></action>                       </keybind>
+
+  <keybind key="W-A-slash">             <action name="ToggleMaximize"><direction>vertical</direction></action>          </keybind>
+  <keybind key="W-A-comma">             <action name="ToggleMaximize"><direction>horizontal</direction></action>        </keybind>
+  <keybind key="W-A-F">                 <action name="ToggleMaximize"/>                                                 </keybind>
+
+  <keybind key="W-A-semicolon">         <action name="Close"/>                                                          </keybind>
+  <keybind key="W-A-period">            <action name="ToggleShade"/>                                                    </keybind>
+
+
+  <keybind key="W-F1">          <action name="GoToDesktop"><to>1</to></action>                          </keybind>
+  <keybind key="W-F2">          <action name="GoToDesktop"><to>2</to></action>                          </keybind>
+  <keybind key="W-F3">          <action name="GoToDesktop"><to>3</to></action>                          </keybind>
+  <keybind key="W-F4">          <action name="GoToDesktop"><to>4</to></action>                          </keybind>
+  <keybind key="W-F5">          <action name="GoToDesktop"><to>5</to></action>                          </keybind>
+  <keybind key="W-F6">          <action name="GoToDesktop"><to>6</to></action>                          </keybind>
+  <keybind key="W-F7">          <action name="GoToDesktop"><to>7</to></action>                          </keybind>
+  <keybind key="W-F8">          <action name="GoToDesktop"><to>8</to></action>                          </keybind>
+  <keybind key="W-F9">          <action name="GoToDesktop"><to>9</to></action>                          </keybind>
+  <keybind key="W-F10">         <action name="GoToDesktop"><to>10</to></action>                         </keybind>
+  <keybind key="W-F11">         <action name="GoToDesktop"><to>11</to></action>                         </keybind>
+  <keybind key="W-F12">         <action name="GoToDesktop"><to>12</to></action>                         </keybind>
+
+  <keybind key="W-C-F1">        <action name="SendToDesktop"><to>1</to></action>                        </keybind>
+  <keybind key="W-C-F2">        <action name="SendToDesktop"><to>2</to></action>                        </keybind>
+  <keybind key="W-C-F3">        <action name="SendToDesktop"><to>3</to></action>                        </keybind>
+  <keybind key="W-C-F4">        <action name="SendToDesktop"><to>4</to></action>                        </keybind>
+  <keybind key="W-C-F5">        <action name="SendToDesktop"><to>5</to></action>                        </keybind>
+  <keybind key="W-C-F6">        <action name="SendToDesktop"><to>6</to></action>                        </keybind>
+  <keybind key="W-C-F7">        <action name="SendToDesktop"><to>7</to></action>                        </keybind>
+  <keybind key="W-C-F8">        <action name="SendToDesktop"><to>8</to></action>                        </keybind>
+  <keybind key="W-C-F9">        <action name="SendToDesktop"><to>9</to></action>                        </keybind>
+  <keybind key="W-C-F10">       <action name="SendToDesktop"><to>10</to></action>                       </keybind>
+  <keybind key="W-C-F11">       <action name="SendToDesktop"><to>11</to></action>                       </keybind>
+  <keybind key="W-C-F12">       <action name="SendToDesktop"><to>12</to></action>                       </keybind>
+
+  <keybind key="W-A-F1">        <action name="SendToDesktop"><to>1</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F2">        <action name="SendToDesktop"><to>2</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F3">        <action name="SendToDesktop"><to>3</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F4">        <action name="SendToDesktop"><to>4</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F5">        <action name="SendToDesktop"><to>5</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F6">        <action name="SendToDesktop"><to>6</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F7">        <action name="SendToDesktop"><to>7</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F8">        <action name="SendToDesktop"><to>8</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F9">        <action name="SendToDesktop"><to>9</to><follow>no</follow></action>     </keybind>
+  <keybind key="W-A-F10">       <action name="SendToDesktop"><to>10</to><follow>no</follow></action>    </keybind>
+  <keybind key="W-A-F11">       <action name="SendToDesktop"><to>11</to><follow>no</follow></action>    </keybind>
+  <keybind key="W-A-F12">       <action name="SendToDesktop"><to>12</to><follow>no</follow></action>    </keybind>
+
+  <keybind key="W-backslash">   <action name="ShowMenu"><menu>client-menu</menu></action>               </keybind>
+  <keybind key="W-S-backslash"> <action name="ShowMenu"><menu>client-list-combined-menu</menu></action> </keybind>
+
+
+  <keybind key="W-S-E"> <action name="Exit"/>           </keybind>
+  <keybind key="W-S-R"> <action name="Reconfigure"/>    </keybind>
 </keyboard>
 
 <mouse>
@@ -234,6 +234,10 @@
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
+    </mousebind>
+
+    <mousebind button="W-S-Middle" action="Press">
+      <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
     </mousebind>
 
     <mousebind button="W-Up" action="Click">

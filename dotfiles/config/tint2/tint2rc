@@ -52,21 +52,13 @@ rounded = 2
 border_width = 1
 border_sides = TBLR
 background_color = #eeeeee 100
-border_color = #cccccc 100
-background_color_hover = #eeeeee 100
-border_color_hover = #cccccc 100
-background_color_pressed = #eeeeee 100
-border_color_pressed = #cccccc 100
+border_color = #ff0000 100
 
 rounded = 2
 border_width = 1
 border_sides = TBLR
 background_color = #dddddd 100
-border_color = #999999 100
-background_color_hover = #dddddd 100
-border_color_hover = #999999 100
-background_color_pressed = #dddddd 100
-border_color_pressed = #999999 100
+border_color = #ff0000 100
 
 rounded = 3
 border_width = 0

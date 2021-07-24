@@ -4,14 +4,14 @@
 set -e -o pipefail
 
 list=(
-	"$(xdg-user-dir DESKTOP)"
-	"$(xdg-user-dir DOCUMENTS)"
-	~/vg
+    "$(xdg-user-dir DESKTOP)"
+    "$(xdg-user-dir DOCUMENTS)"
+    ~/vg
 )
 
 for x in "${list[@]}"
 do
-	[[ -r "$x" ]] || exit 1
+    [[ -r "$x" ]] || exit 1
 done
 
 mkdir -p ~/backup

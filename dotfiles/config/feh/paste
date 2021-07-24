@@ -14,13 +14,13 @@ right=
 
 if [[ "$dir" = prev ]]
 then
-	((pos <= 1)) && exit 1
-	left="$curr"
-	right="$(sed -n $((pos - 1))p "$list")"
+    ((pos <= 1)) && exit 1
+    left="$curr"
+    right="$(sed -n $((pos - 1))p "$list")"
 else
-	((pos >= lines)) && exit 1
-	left="$(sed -n $((pos + 1))p "$list")"
-	right="$curr"
+    ((pos >= lines)) && exit 1
+    left="$(sed -n $((pos + 1))p "$list")"
+    right="$curr"
 fi
 
 magick "$left" "$right" +append - | feh "$@" - &

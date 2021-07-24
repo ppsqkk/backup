@@ -1,10 +1,10 @@
 [user]
-	name = Kipling Liu
-	email = kipling.i.liu@gmail.com
+    name = Kipling Liu
+    email = kipling.i.liu@gmail.com
 [core]
-	excludesfile = ~/.gitignore
-	autoclrf = input
+    excludesfile = ~/.gitignore
+    autoclrf = input
 [rerere]
-	enabled = true
+    enabled = true
 [init]
-	defaultBranch = main
+    defaultBranch = main

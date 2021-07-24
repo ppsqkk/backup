@@ -21,6 +21,7 @@ desmume
 dmidecode
 docbook-xml
 docbook-xsl
+dolphin
 doxygen
 dunst
 efibootmgr
@@ -32,13 +33,13 @@ fd
 feh
 ffmpeg
 firefox
+flameshot
 flex
 fzf
 gcc
 gdb
 gimp
 git
-gnupg
 grub
 gvim
 htop
@@ -54,7 +55,7 @@ keepassxc
 kolourpaint
 lib32-libpulse
 lib32-mesa
-libtool
+libbsd
 linux
 linux-firmware
 lld
@@ -73,12 +74,11 @@ mpv
 msmtp
 mupen64plus
 mutt
+network-manager-applet
 networkmanager
-nodejs
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-npm
 obs-studio
 okular
 openbox
@@ -87,7 +87,6 @@ p7zip
 pacman-contrib
 pandoc
 patch
-perl
 pkgconf
 pkgstats
 pulseaudio
@@ -135,6 +134,7 @@ unrar
 unzip
 valgrind
 weechat
+wget
 which
 wine
 wine-gecko
@@ -195,4 +195,5 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xss-lock
+yasm
 zip

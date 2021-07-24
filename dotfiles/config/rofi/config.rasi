@@ -1,9 +1,9 @@
 configuration {
-	modi: "combi";
-	font: "mono 10";
-	terminal: "alacritty";
-	run-shell-command: "{terminal} -e bash -c '{cmd}; read -rs -n 1'";
-	combi-modi: "run,window";
-	matching: "regex";
-	theme: "Arc";
+    modi: "combi";
+    font: "mono 10";
+    terminal: "alacritty";
+    run-shell-command: "{terminal} -e bash -c '{cmd}; read -rs -n 1'";
+    combi-modi: "run,window";
+    matching: "regex";
+    theme: "Arc";
 }
