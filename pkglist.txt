@@ -9,6 +9,7 @@ bash-completion
 bc
 binutils
 bison
+calcurse
 calibre
 clamav
 clang

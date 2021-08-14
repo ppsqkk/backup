@@ -14,6 +14,9 @@ splitw -h -d
 splitw -v -d -t2
 
 attach -c ~
+neww -n cal
+send-keys calcurse Enter
+
 neww -n file
 send-keys ranger Enter
 
