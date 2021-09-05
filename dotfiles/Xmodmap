@@ -1,0 +1,2 @@
+clear Lock
+keysym Caps_Lock = Escape Caps_Lock NoSymbol NoSymbol

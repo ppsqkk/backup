@@ -13,6 +13,8 @@ then
     done
 fi
 
+test -f "$HOME/.Xmodmap" && xmodmap "$HOME/.Xmodmap"
+
 xset -b
 xset s 300
 
