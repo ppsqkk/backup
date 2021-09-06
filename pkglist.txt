@@ -1,6 +1,5 @@
 alacritty
 alsa-utils
-anki
 anthy
 autoconf
 automake
@@ -9,6 +8,10 @@ bash-completion
 bc
 binutils
 bison
+blueman
+bluez
+bluez-utils
+brightnessctl
 calcurse
 calibre
 chromium
@@ -24,6 +27,7 @@ dmidecode
 docbook-xml
 docbook-xsl
 dolphin
+dos2unix
 doxygen
 dunst
 efibootmgr
@@ -52,9 +56,11 @@ ibus
 ibus-anthy
 imagemagick
 intel-ucode
+jdk-openjdk
 jq
 keepassxc
 kolourpaint
+krita
 lib32-libpulse
 lib32-mesa
 libbsd
@@ -78,9 +84,11 @@ mupen64plus
 mutt
 network-manager-applet
 networkmanager
+nodejs
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 obs-studio
 okular
 openbox
@@ -89,12 +97,15 @@ p7zip
 pacman-contrib
 pandoc
 patch
+pdftk
 pkgconf
 pkgstats
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 python
 python-pip
+qbittorrent
 racket
 ranger
 rclone
@@ -135,6 +146,7 @@ udisks2
 unrar
 unzip
 valgrind
+vbam-wx
 weechat
 wget
 which

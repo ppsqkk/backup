@@ -28,6 +28,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias su='su -l'
 alias sudo='sudo -v; sudo '
+alias c='clear'
 alias ll='ls -AhltF --group-directories-first --color=auto'
 alias cdiff='diff --color=auto'
 

@@ -36,3 +36,6 @@
 
 "mvsz"
   Shift+Mod4 + m
+
+"txpand ~/.txpand"
+  Control+Mod4 + space

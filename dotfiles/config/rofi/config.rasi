@@ -5,5 +5,5 @@ configuration {
     run-shell-command: "{terminal} -e bash -c '{cmd}; read -rs -n 1'";
     combi-modi: "run,window";
     matching: "regex";
-    theme: "Arc";
 }
+@theme "Arc"
