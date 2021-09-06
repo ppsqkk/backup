@@ -1,6 +1,5 @@
 alacritty
 alsa-utils
-anki
 anthy
 autoconf
 automake
@@ -9,6 +8,9 @@ bash-completion
 bc
 binutils
 bison
+blueman
+bluez
+bluez-utils
 calcurse
 calibre
 chromium
@@ -52,6 +54,7 @@ ibus
 ibus-anthy
 imagemagick
 intel-ucode
+jdk-openjdk
 jq
 keepassxc
 kolourpaint
@@ -93,6 +96,7 @@ pkgconf
 pkgstats
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 python
 python-pip
 racket
