@@ -12,12 +12,6 @@ exitstatus () {
     [[ "$status" != 0 ]] && printf ' \1%s\2%s\1%s\2' "$(tput setaf 1)" "$status" "$(tput sgr0)"
 }
 
-preprompt () {
-    local msg
-    msg="$(perl -e 'print "-" x '"$COLUMNS"';')"
-    printf '\1%s\2%s\1%s\2' "$(tput setaf 4)" "$msg" "$(tput sgr0)"
-}
-
 wd () {
     printf ' '
     sup -n "${PROMPT_DIRTRIM:-1}" "$PWD"
@@ -33,7 +27,7 @@ alias ll='ls -AhltF --group-directories-first --color=auto'
 alias cdiff='diff --color=auto'
 
 HISTCONTROL=ignoreboth
-PS1="\$(preprompt)\n[\[$(tput setaf 2)\]\u@\h\[$(tput sgr0)\]\$(wd)]\$(__git_ps1 \" (%s)\")\$(exitstatus) \$ "
+PS1="[\[$(tput setaf 2)\]\u@\h\[$(tput sgr0)\]\$(wd)]\$(__git_ps1 \" (%s)\")\$(exitstatus) \$ "
 PROMPT_COMMAND='status="$?"'
 PROMPT_DIRTRIM=2
 

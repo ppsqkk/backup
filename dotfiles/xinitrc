@@ -15,17 +15,21 @@ fi
 
 test -f "$HOME/.Xmodmap" && xmodmap "$HOME/.Xmodmap"
 
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+
 xset -b
 xset s 300
 
 xbindkeys
-ibus-daemon -drx
-redshift -P -O 4000
+redshift -l $(curl -s "https://location.services.mozilla.com/v1/geolocate?key=geoclue" | jq -r '"\(.location.lat):\(.location.lng)"') &
+dunst &
+copyq &
 
 nm-applet &
+blueman-applet &
+ibus-daemon -drx
 flameshot &
-xss-lock -- lock &
-copyq &
-dunst &
 
 exec openbox-session

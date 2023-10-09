@@ -1,3 +1,7 @@
+syntax on
+filetype indent on
+colorscheme PaperColor
+
 set number
 set backspace=indent,eol,start
 set ruler
@@ -12,3 +16,4 @@ set foldmethod=indent
 set foldlevelstart=99
 
 command -nargs=1 T set et ts=<args> sw=<args>
+T4

@@ -10,14 +10,20 @@
 "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
   XF86AudioMicMute
 
-"flameshot gui"
+"ankishot"
   Print
+
+"ankishot --use-prev"
+  Control + Print
 
 "alacritty"
   Mod4 + Return
 
 "rofi -show combi"
   Mod4 + o
+
+"dmenu-cmd"
+  Shift+Mod4 + o
 
 "dunstctl history-pop"
   Shift+Mod4 + h
@@ -31,7 +37,7 @@
 "lock"
   Shift+Mod4 + l
 
-"tbar"
+"toggle tint2"
   Shift+Mod4 + t
 
 "mvsz"
