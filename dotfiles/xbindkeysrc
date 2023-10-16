@@ -10,12 +10,6 @@
 "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
   XF86AudioMicMute
 
-"ankishot"
-  Print
-
-"ankishot --use-prev"
-  Control + Print
-
 "alacritty"
   Mod4 + Return
 
@@ -40,8 +34,8 @@
 "toggle tint2"
   Shift+Mod4 + t
 
-"mvsz"
-  Shift+Mod4 + m
+"ames.sh -r"
+  Mod4 + r
 
-"txpand ~/.txpand"
-  Control+Mod4 + space
+"ames.sh -w"
+  Mod4 + Print
