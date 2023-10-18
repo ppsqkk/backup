@@ -7,4 +7,4 @@
 [rerere]
     enabled = true
 [init]
-    defaultBranch = main
+    defaultBranch = master

@@ -16,7 +16,7 @@
 "rofi -show combi"
   Mod4 + o
 
-"dmenu-cmd"
+"cmd-menu"
   Shift+Mod4 + o
 
 "dunstctl history-pop"
