@@ -14,7 +14,7 @@ exitstatus () {
 
 wd () {
     printf ' '
-    sup -n "${PROMPT_DIRTRIM:-1}" "$PWD"
+    sup.py -n "${PROMPT_DIRTRIM:-1}" "$PWD"
 }
 
 alias cp='cp -i'

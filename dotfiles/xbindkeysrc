@@ -17,7 +17,7 @@
   Mod4 + o
 
 "cmd-menu"
-  Shift+Mod4 + o
+  Shift+Mod4 + d
 
 "dunstctl history-pop"
   Shift+Mod4 + h
